@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
+plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search docker docker-compose)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -41,3 +41,12 @@ pyenv activate lewagon 2>/dev/null && echo "🐍 Loading 'lewagon' virtualenv"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+export ANDROID_SDK=/Users/elie/Library/Android/sdk
+export PATH=/Users/elie/Library/Android/sdk/platform-tools:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/elie/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/elie/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/elie/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/elie/google-cloud-sdk/completion.zsh.inc'; fi
